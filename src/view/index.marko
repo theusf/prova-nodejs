@@ -1,0 +1,34 @@
+
+<body>
+
+    <h1> Prova NodeJS</h1>
+
+
+<form action="/buscar" method="post">
+    <select name="categ">
+      
+    <option for (categorias in data.categs) value="${categorias.idCatProd}">
+           ${categorias.descCatProd} </option> 
+    </select>
+
+    <button type="submit">
+    Buscar
+    </button>
+
+</form>
+
+
+<h1>${data.categoria}</h1>
+<tr>
+     <td>Descrição</td>
+     <td> Valor</td>
+</tr><br>
+<tr for (prods in data.produtos)>
+     <td>${prods.descProd}</td>
+     <td> ${prods.valorProd}</td>
+  </tr>
+
+
+
+</body>
+
